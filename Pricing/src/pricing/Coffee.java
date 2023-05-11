@@ -28,7 +28,7 @@ public class Coffee {
         Coffee.almondMilk = almondMilk;
     }
 
-    public static boolean isWhippedCream() {
+    public static boolean hasWhippedCream() {
         return whippedCream;
     }
 
@@ -36,7 +36,7 @@ public class Coffee {
         Coffee.whippedCream = whippedCream;
     }
 
-    public static boolean isAlmondMilk() {
+    public static boolean hasAlmondMilk() {
         return almondMilk;
     }
 
