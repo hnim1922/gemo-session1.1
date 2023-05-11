@@ -48,13 +48,6 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -72,125 +65,38 @@
 This is the solution for the first homework in the Tech course.
 The solution is a small project which calculate the total price of an order at a cafe.
 
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 ### Built With
 
-* [![Java]
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+* Java
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- [ ] Calculate the price of a coffee order based on the customization
+- [ ] Add more custmoization for the drinks
+- [ ] Allow customization options for chocolate sauce, which can only be added to hot drinks
+- [ ] Add more customization options for breakfast items
+- [ ] Calculates a list of items instead of one item at a time.
 
 
+ ## Design choice
+ Core Java for the language
+ The code uses the Single Responsibility Principle (SRP), where each method from each class has a specific responsibility and performs a single task.
 
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+ 
+## Implement
+<p>This project implements a coffee shop ordering system with five different pricing functions for different types of items. The system calculates the total price of an order based on the list of items ordered. The prices for each item are based on the item's type, size, and any customizations selected by the customer.</p>
+<p>There are three classes: Coffee, Breakfast, and Order. The Coffee class represents a coffee drink and contains methods for calculating the price of a coffee drink with various customizations. The Breakfast class represents a breakfast item (either a sandwich or a bagel) and contains a method for calculating the price of the breakfast item with various customizations. The Order class represents an order and contains methods for calculating the total price of the order and the price breakdown for each item in the order.</p>
+There are five different pricing functions: calculatePrice1, calculatePrice2, calculatePrice3, calculatePrice4, and calculatePrice5. Each function calculates the price of a specific type of item and takes into account any customizations selected by the customer. The calculatePrice5 function is the most general, as it can handle any list of items and calculate the total price and price breakdown for the entire order.
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* Know how to simple write test case for the project.
 * []()
 * []()
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
