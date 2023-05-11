@@ -11,39 +11,40 @@ package pricing;
  */
 public class Coffee {
 
-    private static String type;
-    private static String size;
-    private static boolean whippedCream;
-    private static int chocolateSauce;
-    private static boolean almondMilk;
+    private  String type;
+    private  String size;
+    private  boolean whippedCream;
+    private  int chocolateSauce;
+    private  boolean almondMilk;
 
     public Coffee() {
     }
 
-    public Coffee(String type, String size, boolean whipcream, int chocolateSauce, boolean almondMilk) {
-        Coffee.type = type;
-        Coffee.size = size;
-        Coffee.whippedCream = whipcream;
-        Coffee.chocolateSauce = chocolateSauce;
-        Coffee.almondMilk = almondMilk;
+    public Coffee(String type, String size, boolean whippedCream, int chocolateSauce, boolean almondMilk) {
+        this.type = type;
+        this.size = size;
+        this.whippedCream = whippedCream;
+        this.chocolateSauce = chocolateSauce;
+        this.almondMilk = almondMilk;
     }
 
-    public static boolean hasWhippedCream() {
+    public boolean hasWhippedCream() {
         return whippedCream;
     }
 
-    public static void setWhippedCream(boolean whippedCream) {
-        Coffee.whippedCream = whippedCream;
+    public void setWhippedCream(boolean whippedCream) {
+        this.whippedCream = whippedCream;
     }
 
-    public static boolean hasAlmondMilk() {
+    public boolean hasAlmondMilk() {
         return almondMilk;
     }
 
-    public static void setAlmondMilk(boolean almondMilk) {
-        Coffee.almondMilk = almondMilk;
+    public void setAlmondMilk(boolean almondMilk) {
+        this.almondMilk = almondMilk;
     }
 
+   
     public String getType() {
         return type;
     }
@@ -68,7 +69,7 @@ public class Coffee {
         this.chocolateSauce = chocolateSauce;
     }
 
-    public static double calculatePrice1() {
+    public  double calculatePrice1() {
         double price = 2.0;
 
         if (type.equalsIgnoreCase("blended")) {
@@ -95,7 +96,7 @@ public class Coffee {
         return price;
     }
 
-    public static double calculatePrice2() {
+    public  double calculatePrice2() {
         double price = 0;
 
         if (type.equalsIgnoreCase("milk tea")) {
@@ -115,7 +116,7 @@ public class Coffee {
         return price;
     }
 
-    public static double calculatePrice3() {
+    public  double calculatePrice3() {
         double price = 2.0;
         if (size.equalsIgnoreCase("M")) {
             price += 0.5;

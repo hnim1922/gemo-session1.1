@@ -63,24 +63,24 @@ public class Order {
             breakdown += coffee.getType() + " ";
             breakdown += "size " + coffee.getSize() + " ";
 
-            if (coffee.isWhippedCream()) {
+            if (coffee.hasWhippedCream()) {
                 breakdown += "with whipped cream ";
             }
-            if (coffee.isAlmondMilk()) {
+            if (coffee.hasAlmondMilk()) {
                 breakdown += "with almond milk ";
             }
 
             if (coffee.getType().equalsIgnoreCase("hot") && coffee.getChocolateSauce() > 0) {
-                breakdown += coffee.getChocolateSauce() + " pumps of chocolate sauce";
+                breakdown += "and" + coffee.getChocolateSauce() + " pumps of chocolate sauce";
             }
             breakdown += "\n";
 
             switch (coffee.getType().toLowerCase()) {
                 case "hot":
-                    breakdown += " $2 for Hot\n";
+                    breakdown += "$2 for Hot\n";
                     break;
                 case "cold":
-                    breakdown += " $2 for Cold\n";
+                    breakdown += "$2 for Cold\n";
                     break;
                 case "blended":
                     breakdown += "$3 for Blended\n";
@@ -89,7 +89,7 @@ public class Order {
             }
             switch (coffee.getSize().toUpperCase()) {
                 case "S":
-                    breakdown += " $0 for size S\n";
+                    breakdown += "$0 for size S\n";
                     break;
                 case "M":
                     breakdown += "$0.5 for size M\n";
@@ -101,18 +101,16 @@ public class Order {
                     breakdown += "$1.5 for size XL\n";
                     break;
             }
-            if (coffee.isWhippedCream()) {
+            if (coffee.hasWhippedCream()) {
                 breakdown += "$0.50 for whipped cream\n";
             }
-            if (coffee.isAlmondMilk()) {
+            if (coffee.hasAlmondMilk()) {
                 breakdown += "$0.50 for almond milk ";
             }
             if (coffee.getType().equalsIgnoreCase("hot") && coffee.getChocolateSauce() > 0) {
                 double chocolateSaucePrice = Math.min(2, Math.max(0, coffee.getChocolateSauce() - 2)) * 0.5;
                 breakdown += String.format("+ $" + chocolateSaucePrice + " for " + coffee.getChocolateSauce() + " pumps of chocolate sauce\n");
-
             }
-
         }
         for (Breakfast breakfast : breakfastItems) {
             breakdown += "Breakfast item: ";
