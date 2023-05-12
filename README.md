@@ -49,7 +49,7 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#roadmap">Functions</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -70,7 +70,7 @@ The solution is a small project which calculate the total price of an order at a
 * Java
 
 <!-- ROADMAP -->
-## Roadmap
+## Functions
 
 - [ ] Calculate the price of a coffee order based on the customization
 - [ ] Add more custmoization for the drinks
@@ -90,12 +90,11 @@ The solution is a small project which calculate the total price of an order at a
 There are five different pricing functions: calculatePrice1, calculatePrice2, calculatePrice3, calculatePrice4, and calculatePrice5. Each function calculates the price of a specific type of item and takes into account any customizations selected by the customer. The calculatePrice5 function is the most general, as it can handle any list of items and calculate the total price and price breakdown for the entire order.
 
 
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+<!-- lessons learned -->
+## Lessons learned
 
-* Know how to simple write test case for the project.
-* []()
-* []()
+* Know how to write simple test case for the project.
+*  
 
 
 
