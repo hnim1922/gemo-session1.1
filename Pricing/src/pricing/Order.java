@@ -43,7 +43,7 @@ public class Order {
         for (Coffee coffee : coffees) {
             if (coffee.getType().equalsIgnoreCase("hot")) {
                 if (coffee.getSize().equalsIgnoreCase("L") || coffee.getSize().equalsIgnoreCase("XL")) {
-                    System.out.println("M or S for hot");
+                    throw new Exception("M or S for hot");
                 } else {
                     totalPrice = coffee.calculatePrice3();
                 }

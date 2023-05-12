@@ -83,8 +83,8 @@ public class Coffee {
                 price += 0.5;
             }
         } else {
-            if (!size.equalsIgnoreCase("L")) {
-                System.out.println("L size is only available for cold and blended drinks");
+            if (size.equalsIgnoreCase("L")) {
+               throw new Error("L size is only available for cold and blended drinks");
             } else if (size.equalsIgnoreCase("M")) {
                 price += 0.5;
             }
